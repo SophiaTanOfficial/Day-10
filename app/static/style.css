@@ -1,0 +1,43 @@
+/*for community webpage*/
+
+body{
+    font-family: "Times New Roman"
+}
+
+a {
+    color: black !important;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: #80cbc4;
+    font-size: 20px;
+    text-align: center;
+}
+
+a:hover{
+    border-bottom: solid teal;
+}
+
+ul {
+    font-size: 30px;
+}
+
+.row {
+    border-bottom: solid white;
+}
+
+label {
+    font-size: 30px;
+    color: teal;
+}
+
+h1 {
+    border: 4px dotted black;
+    text-align: center;
+}
+
+#list {
+    background-color: teal;
+    border: solid #01579b;
+}
+

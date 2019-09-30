@@ -1,0 +1,31 @@
+<!--This is my materialize base.html!-->
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/static/style.css">
+    
+    <!--This stuff is Jinja2, which helps us format and template-->
+    <!--think of them like fill in the blank areas of our template-->
+    {% block head %}
+    {% endblock %}
+    <!--block is a keyword - title is a name you can use to reference-->
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <!-- in this example I can use the keyword content to put things in this block-->
+    {% block content %}
+    
+    {% endblock %}
+    <!--jinja2 says all things must have an end to work.-->
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

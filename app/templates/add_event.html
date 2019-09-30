@@ -1,0 +1,24 @@
+{% extends "base.html" %} 
+
+{% block title %}Add Event{% endblock %} 
+
+{% block content %}
+<div class= "container">
+    <h1>Community Events Board: Add Event</h1>
+    <!--form needs a method (POST) and action(which matches a route-->
+    <!-- POST ==sending information away GET == requesting information from a server-->
+    <form method="POST" action="/addevent">
+        <label for="eventName">Name of Event:</label>
+        <input type="text" name="eventName" placeholder="Type event here."></input> <!--instead of using value, you could use placeholder. As soon as you start putting something there, the placeholder disappears-->
+        <!-- other "type"s include numbers (can tick up and down) or password (shows *s)-->
+        
+        
+        <label for="eventDate">Event Date:</label>
+        <input type="text" name="eventDate" placeholder = "YYYY--MM--DD"></input>
+        
+        <!--this will let user actually send info! value is for the user.-->
+        <input type = "submit" value = "Send Event"></input>
+    </form>
+</div>
+    <!--We will add a form to take in an event name and a date-->
+{% endblock %}

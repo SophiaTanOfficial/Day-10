@@ -1,0 +1,25 @@
+
+{% extends "base.html" %} 
+<!-- get the template from base.html and we're gonna add on to it-->
+
+{% block title %}Community Events Board{% endblock %} 
+
+<!-- Connects to content in base.html. Fills into the body-->
+
+{% block content %}
+<div class = "container" id = "head">
+   <h1>Community Events Board</h1>
+</div>
+<div class="container" id = "list">
+    <div class="event-list">
+      <ul>
+        {% for event in events %}
+        <li class="row">{{ event.event }} - {{ event.date }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+</div>
+<div class="container">
+  <a href = "addevent">Click here to add an event</a>
+</div>
+{% endblock %}
